@@ -1,0 +1,98 @@
+B?NG DANH SÁCH CH?C N?NG;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+<Tên d? án>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+* ?i?n thông tin vào các c?t màu tr?ng;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+"Gi?i pháp bao g?m Phân tích thi?t k?;
+Phát tri?n: g?m l?p trình, s?a l?i, unit test; 
+Ki?m th?: K?ch b?n ki?m th?, Test tính n?ng, h??ng d?n s? d?ng";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+TT;Mã yêu c?u;Tên Ch?c n?ng;Mô t? ch?c n?ng;Ghi chú (n?u có);comment;N? l?c th?c hi?n sau khi tái s? d?ng (MH);;;;;;;;"N? l?c th?c hi?n
+(MH)";;;;Tái s? d?ng (%);Tái s? d?ng t? ch?c n?ng/h? th?ng nào;N? l?c d? án ?ánh giá có th? ??m b?o ???c;Ghi chú;Có thuê ngoài th?c hi?n không?;;;N? l?c thuê ngoài (MH);;;N? l?c t? th?c hi?n (MH);;;;;
+;;;;;;T?ng n? l?c th?c hi?n (MH);Gi?i pháp;Phát tri?n;Ki?m th?;Comment;Ph?n h?i;Mã ch?c n?ng;Tên lo?i ch?c n?ng;Gi?i pháp;Phát tri?n;Ki?m th?;"T?ng n? l?c th?c hi?n
+(MH)";;;;;Gi?i pháp;Phát tri?n;Ki?m th?;Gi?i pháp;Phát tri?n;Ki?m th?;Gi?i pháp;Phát tri?n;Ki?m th?;;;
+1;;Phân tích thi?u sót c?a các k?t qu? ??u ra, t? ?ó ??a ra các ph??ng án ?? xu?t;"?? xu?t ph??ng án t?ng ch?t l??ng k?t qu? ??u ra c?a video t?ng h?p:
+- Thay ??i ??c tr?ng cho bi?u di?n v?n b?n
+- S? d?ng Video Language Model ?? h? tr? mô t? các s? ki?n trong cùng m?t chunk
+- S? d?ng thêm mô hình Classification ?? l?c các chunk có Replay
+";S? d?ng các ph??ng pháp liên quan t?i moment retrieval và highlight detection + bi?u di?n ??c tr?ng;;5,4;5,4;0;0;;;PTDL_?XGPM3;?? xu?t gi?i pháp xây d?ng model ph?c t?p;6;0;0;6;10%;;;;Không;Không;Không;;;;5,40;0,00;0,00;;;
+2;;?? xu?t ph??ng án s? d?ng google-bert/bert-base-uncased cho bi?u di?n v?n b?n cho mô hình mutimodal s? d?ng video + text +keyword;?? xu?t ph??ng án s? d?ng google-bert/bert-base-uncased cho bi?u di?n v?n b?n cho mô hình mutimodal s? d?ng video + text +keyword;S? d?ng các mô hình khác cho bi?u di?n v?n b?n;;5,4;5,4;0;0;;;PTDL_?XGPM3;?? xu?t gi?i pháp xây d?ng model ph?c t?p;6;0;0;6;10%;;;;Không;Không;Không;;;;5,40;0,00;0,00;;;
+3;;Xây d?ng mô hình TimeSformer s? d?ng Text Encoder là BERT;Xây d?ng mô hình TimeSformer s? d?ng Text Encoder là BERT;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+4;;Hu?n luy?n mô hình TimeSformer s? d?ng Text Encoder là BERT;Hu?n luy?n mô hình TimeSformer s? d?ng Text Encoder là BERT;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+5;;Tinh ch?nh tham s? learning rate;Tinh ch?nh tham s? learning rate;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+6;;Tinh ch?nh tham s? optimizer;Tinh ch?nh tham s? optimizer;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+7;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+8;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+9;;?? xu?t ph??ng án s? d?ng FacebookAI/roberta-base cho bi?u di?n v?n b?n cho mô hình mutimodal s? d?ng video + text +keyword;?? xu?t ph??ng án s? d?ng FacebookAI/roberta-base cho bi?u di?n v?n b?n cho mô hình mutimodal s? d?ng video + text +keyword;;;5,4;5,4;0;0;;;PTDL_?XGPM3;?? xu?t gi?i pháp xây d?ng model ph?c t?p;6;0;0;6;10%;;;;Không;Không;Không;;;;5,40;0,00;0,00;;;
+10;;Xây d?ng mô hình TimeSformer s? d?ng Text Encoder là ROBERTA;Xây d?ng mô hình TimeSformer s? d?ng Text Encoder là ROBERTA;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+11;;Hu?n luy?n mô hình TimeSformer s? d?ng Text Encoder là ROBERTA;Hu?n luy?n mô hình TimeSformer s? d?ng Text Encoder là ROBERTA;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+12;;Tinh ch?nh tham s? learning rate;Tinh ch?nh tham s? learning rate;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+13;;Tinh ch?nh tham s? optimizer;Tinh ch?nh tham s? optimizer;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+14;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+15;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+16;;?? xu?t ph??ng án s? d?ng FacebookAI/xlm-roberta-base cho bi?u di?n v?n b?n cho mô hình mutimodal s? d?ng video + text +keyword;?? xu?t ph??ng án s? d?ng FacebookAI/xlm-roberta-base cho bi?u di?n v?n b?n cho mô hình mutimodal s? d?ng video + text +keyword;;;5,4;5,4;0;0;;;PTDL_?XGPM3;?? xu?t gi?i pháp xây d?ng model ph?c t?p;6;0;0;6;10%;;;;Không;Không;Không;;;;5,40;0,00;0,00;;;
+17;;Xây d?ng mô hình TimeSformer s? d?ng Text Encoder là XLM_ROBERTA;Xây d?ng mô hình TimeSformer s? d?ng Text Encoder là XLM_ROBERTA;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+18;;Hu?n luy?n mô hình TimeSformer s? d?ng Text Encoder là XLM_ROBERTA;Hu?n luy?n mô hình TimeSformer s? d?ng Text Encoder là XLM_ROBERTA;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+19;;Tinh ch?nh tham s? learning rate;Tinh ch?nh tham s? learning rate;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+20;;Tinh ch?nh tham s? optimizer;Tinh ch?nh tham s? optimizer;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+21;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+22;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+23;;?? xu?t ph??ng án s? d?ng Video Language Model trích xu?t ra các thông tin s? ki?n;"?? xu?t s? d?ng các mô hình VLM d??i ?ây
+- HuggingFaceTB/SmolVLM2-2.2B-Instruct
+- lmms-lab/EgoGPT-7b
+- llava-hf/LLaVA-NeXT-Video-7B-hf";S? d?ng các mô hình Video-text to text ?? h?c các thông tin trong tr?n ??u: timestamp + mô t?, ?ánh giá ?i?m scoring saliency;;3,6;3,6;0;0;;;PTDL_?XGPM2;?? xu?t gi?i pháp xây d?ng model trung bình;4;0;0;4;10%;;;;Không;Không;Không;;;;3,60;0,00;0,00;;;
+24;;?? xu?t s? d?ng mô hình Video-text SMOLVLM2 ?? h?c thông tin s? ki?n v?i prompting 1;?? xu?t s? d?ng mô hình Video-text SMOLVLM2 ?? h?c thông tin s? ki?n v?i prompting 1;;;1,7;1,7;0;0;;;PTDL_?XGPM1;?? xu?t gi?i pháp xây d?ng model ??n gi?n;2;0;0;2;15%;;;;Không;Không;Không;;;;1,70;0,00;0,00;;;
+25;;Xây d?ng mô hình Video-text SMOLVLM2 ?? h?c thông tin s? ki?n v?i prompting 1;Xây d?ng mô hình Video-text SMOLVLM2 ?? h?c thông tin s? ki?n v?i prompting 1;;;1,7;0;1,7;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;15%;;;;Không;Không;Không;;;;0,00;1,70;0,00;;;
+26;;Tinh ch?nh tham s? temperature cho video highlight;Tinh ch?nh tham s? temperature;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+27;;Tinh ch?nh tham s? max_new_tokens;Tinh ch?nh tham s? max_new_tokens;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+28;;Tinh ch?nh tham s? segment_length;Tinh ch?nh tham s? segment_length;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+29;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+30;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+31;;?? xu?t s? d?ng mô hình Video-text SMOLVLM2 ?? h?c thông tin s? ki?n v?i prompting 2;?? xu?t s? d?ng mô hình Video-text SMOLVLM2 ?? h?c thông tin s? ki?n v?i prompting 2;;;1,7;1,7;0;0;;;PTDL_?XGPM1;?? xu?t gi?i pháp xây d?ng model ??n gi?n;2;0;0;2;15%;;;;Không;Không;Không;;;;1,70;0,00;0,00;;;
+32;;Tinh ch?nh tham s? temperature;Tinh ch?nh tham s? temperature;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+33;;Tinh ch?nh tham s? max_new_tokens;Tinh ch?nh tham s? max_new_tokens;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+34;;Tinh ch?nh tham s? segment_length;Tinh ch?nh tham s? segment_length;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+35;;Tinh ch?nh tham s? batch_size;Tinh ch?nh tham s? batch_size;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+36;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+37;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+45;;?? xu?t s? d?ng mô hình Video-text EgoGPT-7b ?? h?c thông tin s? ki?n v?i prompting 1;?? xu?t s? d?ng mô hình Video-text EgoGPT-7b ?? h?c thông tin s? ki?n v?i prompting 1;;;1,7;1,7;0;0;;;PTDL_?XGPM1;?? xu?t gi?i pháp xây d?ng model ??n gi?n;2;0;0;2;15%;;;;Không;Không;Không;;;;1,70;0,00;0,00;;;
+46;;Xây d?ng mô hình Video-text  EgoGPT-7b ?? h?c thông tin s? ki?n v?i prompting 1;Xây d?ng mô hình Video-text  EgoGPT-7b ?? h?c thông tin s? ki?n v?i prompting 1;;;1,7;0;1,7;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;15%;;;;Không;Không;Không;;;;0,00;1,70;0,00;;;
+47;;Tinh ch?nh tham s? temperature cho video highlight;Tinh ch?nh tham s? temperature;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+48;;Tinh ch?nh tham s? max_new_tokens;Tinh ch?nh tham s? max_new_tokens;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+49;;Tinh ch?nh tham s? segment_length;Tinh ch?nh tham s? segment_length;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+50;;Tinh ch?nh tham s? batch_size;Tinh ch?nh tham s? batch_size;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+51;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+52;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+53;;?? xu?t s? d?ng mô hình Video-text EgoGPT-7b ?? h?c thông tin s? ki?n v?i prompting 2;?? xu?t s? d?ng mô hình Video-text EgoGPT-7b ?? h?c thông tin s? ki?n v?i prompting 2;;;1,7;1,7;0;0;;;PTDL_?XGPM1;?? xu?t gi?i pháp xây d?ng model ??n gi?n;2;0;0;2;15%;;;;Không;Không;Không;;;;1,70;0,00;0,00;;;
+54;;Tinh ch?nh tham s? temperature cho video highlight;Tinh ch?nh tham s? temperature;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+55;;Tinh ch?nh tham s? max_new_tokens;Tinh ch?nh tham s? max_new_tokens;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+56;;Tinh ch?nh tham s? segment_length;Tinh ch?nh tham s? segment_length;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+57;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+58;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+65;;?? xu?t s? d?ng mô hình TimesFormer ?? nh?n d?ng Replay cho chunk;S? d?ng ph??ng pháp chunk-based ?? l?c các video ???c nh?n di?n là m?t s? ki?n quan tr?ng nh?ng không có Replay. T?c là c?nh quay ?ó ch?a th?c s? là Highlight;S? d?ng các mô hình chunk-based-aware ?? phân lo?i chunk ?ó có Replay x?y ra hay không;;1,7;1,7;0;0;;;PTDL_?XGPM1;?? xu?t gi?i pháp xây d?ng model ??n gi?n;2;0;0;2;15%;;;;Không;Không;Không;;;;1,70;0,00;0,00;;;
+66;;Xây d?ng mô hình facebook/timesformer-base-finetuned-k400 ;Xây d?ng mô hình facebook/timesformer-base-finetuned-k400 ;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+67;;Hu?n luy?n mô hình facebook/timesformer-base-finetuned-k400 trên b? d? li?u m?u;Hu?n luy?n mô hình facebook/timesformer-base-finetuned-k400 trên b? d? li?u m?u;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+68;;Tinh ch?nh tham s? learning_rate;Tinh ch?nh tham s? learning_rate;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+69;;Tinh ch?nh tham s? total_length;Tinh ch?nh tham s? total_length;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+70;;Tinh ch?nh tham s? batch_size;Tinh ch?nh tham s? batch_size;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+71;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+72;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+73;;?? xu?t áp d?ng mô hình VideoMaev2 ?? nh?n d?ng Replay cho chunk;?? xu?t áp d?ng mô hình VideoMaev2 ?? nh?n d?ng Replay cho chunk;;;1,8;1,8;0;0;;;PTDL_?XGPM1;?? xu?t gi?i pháp xây d?ng model ??n gi?n;2;0;0;2;10%;;;;Không;Không;Không;;;;1,80;0,00;0,00;;;
+74;;Xây d?ng mô hình VideoMaev2 nh?n d?ng Replay;Xây d?ng mô hình VideoMaev2 nh?n d?ng Replay;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+75;;Hu?n luy?n mô hình VideoMaev2 nh?n d?ng Replay trên b? d? li?u m?u;Hu?n luy?n mô hình VideoMaev2 nh?n d?ng Replay trên b? d? li?u m?u;;;1,6;0;1,6;0;;;PTDL_TRAIN_MODEL_BASE;Training model base;0;2;0;2;20%;;;;Không;Không;Không;;;;0,00;1,60;0,00;;;
+76;;Tinh ch?nh tham s? learning_rate;Tinh ch?nh tham s? learning_rate;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+77;;Tinh ch?nh tham s? total_length;Tinh ch?nh tham s? total_length;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+78;;Tinh ch?nh tham s? batch_size;Tinh ch?nh tham s? batch_size;;;3,6;0;3,6;0;;;PTDL_MODEL_TUNING;Fine-tune hyperparameters;0;4;0;4;10%;;;;Không;Không;Không;;;;0,00;3,60;0,00;;;
+79;;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;?ánh giá k?t qu? mô hình trên b? d? li?u m?u;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+80;;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;?ánh giá k?t qu? mô hình trên b? d? li?u TV360;;;0,85;0,85;0;0;;;PTDL_BC_KQ_MODEL;Trình bày k?t qu? model;1;0;0;1;15%;;;;Không;Không;Không;;;;0,85;0,00;0,00;;;
+92;;Th?ng nh?t gi?i pháp cho bài toán Action Classification v?i Text Encoder t?i ?u;Th?ng nh?t gi?i pháp cho bài toán Action Classification v?i Text Encoder t?i ?u;;;3,6;3,6;0;0;;;PTDL_TNGPM3;Th?ng nh?t gi?i pháp xây d?ng model ph?c t?p;4;0;0;4;10%;;;;Không;Không;Không;;;;3,60;0,00;0,00;;;
+93;;Th?ng nh?t ph??ng án t?i ?u cho bài toán Highlight Retrieval;Th?ng nh?t ph??ng án t?i ?u cho bài toán Highlight Retrieval;;;3,6;3,6;0;0;;;PTDL_TNGPM3;Th?ng nh?t gi?i pháp xây d?ng model ph?c t?p;4;0;0;4;10%;;;;Không;Không;Không;;;;3,60;0,00;0,00;;;
+94;;Th?ng nh?t ph??ng án t?i ?u cho bài toán Replay Detection;Th?ng nh?t ph??ng án t?i ?u cho bài toán Replay Detection;;;1,8;1,8;0;0;;;PTDL_TNGPM2;Th?ng nh?t gi?i pháp xây d?ng model trung bình;2;0;0;2;10%;;;;Không;Không;Không;;;;1,80;0,00;0,00;;;
+95;;Th?ng nh?t gi?i pháp cho bài toán Video Summarization;Th?ng nh?t gi?i pháp cho bài toán Video Summarization;;;3,6;3,6;0;0;;;PTDL_TNGPM3;Th?ng nh?t gi?i pháp xây d?ng model ph?c t?p;4;0;0;4;10%;;;;Không;Không;Không;;;;3,60;0,00;0,00;;;
+;N? l?c (MH);;;;;176,40;63,40;113,00;0,00;;;;;72;128;0;200;;;;;63,40;113,00;0,00;0,00;0,00;0,00;63,40;113,00;0,00;;;
+;N? l?c (MD);;;;;22,05;7,93;14,13;0,00;;;;;9,00;16,00;0,00;25,00;;;;;7,93;14,13;0,00;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;H??ng d?n ?ánh giá % tái s? d?ng:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;"Qu?n tr? d? án ?ánh giá xem:
+* Có ch?c n?ng t??ng t? trong h? th?ng không?
+* Có ch?c n?ng t??ng t? trong h? th?ng khác c?a ??n v? không?
+* Có tái s? d?ng ???c thi?t k? c?a các ch?c n?ng t??ng t? không?";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
